@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  font-size: 15px;
+}
+
+.container {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content {
+  margin: 0;
+  width: 80%;
+  height: 65%;
+  border-radius: 15px;
+  color: white;
+  background: #1b1938;
+  display: flex;
+}
+
+.container .content .wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .content .wrapper h1 {
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.container .content .wrapper h1 span {
+  color: #aa5cdb;
+  font-weight: 700;
+}
+
+.container .content .wrapper p {
+  width: 60%;
+  text-align: start;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.container .content .wrapper .list-group {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.container .content .wrapper .list-group .list h1 {
+  margin-bottom: 0.35rem;
+}
+
+.container .content .wrapper .list-group .list h5 {
+  font-weight: 400;
+}
+
+.container .content .img-wrapper {
+  flex: 1;
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+
+.container .content .img-wrapper .img-hero {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.container .content .img-wrapper::after {
+  position: absolute;
+  background-color: #aa5cdb;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  border-radius: 0 15px 15px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    height: auto;
+    padding: 50px 0;
+  }
+  .container .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+  }
+  .container .content .wrapper {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .container .content .wrapper p {
+    text-align: center;
+  }
+  .container .content .wrapper .list-group {
+    flex-direction: column;
+    width: 60%;
+  }
+  .container .content .wrapper .list-group .list {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .container .content .wrapper .list-group .list h1 {
+    margin: 0;
+    padding: 0 10px;
+  }
+  .container .content .img-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .container .content .img-wrapper .img-hero {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+  .container .content .img-wrapper::after {
+    border-radius: 15px 15px 0 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
